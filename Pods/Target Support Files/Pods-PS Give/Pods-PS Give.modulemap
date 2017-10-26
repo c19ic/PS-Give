@@ -1,0 +1,6 @@
+framework module Pods_PS_Give {
+  umbrella header "Pods-PS Give-umbrella.h"
+
+  export *
+  module * { export * }
+}
