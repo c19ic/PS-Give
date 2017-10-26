@@ -45,11 +45,12 @@ class NewList: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)  -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProductCell
-        //this is not working! figure out why products not pulling from moltin!
+        
         let product = products[indexPath.item]
         cell.productname.text = product.name
         print(product.name)
         //cell.productprice.text = product.displayPriceWithTax?.formatted
+        //^price label not there (?)
         
         
         return cell
